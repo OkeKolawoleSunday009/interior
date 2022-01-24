@@ -1,0 +1,285 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  body{
+    height: 100%;
+    width: 100%;
+    background: #181719;
+
+  }
+  .logoc{
+      padding: 14px 16px;
+  }
+  .logo{
+        font-family: Crimson Pro;
+        font-style: normal;
+        font-weight: 200;
+        color: white;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;  
+        padding: 10px;
+        font-size: 15px;
+        border: 3px solid white;
+  }
+  .topnav{
+    overflow: hidden;
+      width: 100%;
+      display: flex;
+  }
+  .topnav .icon{
+    display: none;
+  }
+  .nav{
+      margin-left: auto;
+      float: right;
+  }
+  .nav li {
+       font-size: 17px;
+       display: block;
+      display: inline-block;   
+      text-decoration: none;
+      padding: 14px 16px;
+      font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;  
+    
+  }
+  .nav a {
+    
+    color: white;
+      margin-right: 10px;
+      text-decoration: none;
+  }
+   .active{
+       border-bottom: 3px solid white;
+       margin-top:5px;
+   }
+   .container {
+    font-size: 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.1fr 0.7fr 1fr;
+    grid-template-rows:  0.1fr 1fr ;
+    grid-template-areas:
+       "header header header "
+      "advert advert content "
+      "footer footer footer ";
+  }
+  .abt{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+  }
+  button{
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.94px;
+    padding: 5px;
+    background-color: #181719;;
+    border: none;
+    color: white;
+  }
+  .item1{ 
+    grid-area: header;
+  }
+  .inside1{
+    color: cornsilk;
+     width: 70%;
+      margin:  40px;
+      align-self: center;
+  }
+  .item2{
+    grid-area: advert;
+    display: flex;
+  }
+  .item3{
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+  }
+  .item4{
+      grid-area: footer;
+  }
+  .img-c2{
+   
+    width: 8vmax;
+    height: auto;
+    border-radius: 50%;
+  }
+  .cont{
+    
+      margin: 10px 10px;
+        display: flex;
+    
+  }
+  .img-c{
+    align-self:center; 
+    width: 50vmax;
+    height: auto;
+  }
+  .bio{
+    color: cornsilk;
+    background-color:#181719;
+    width: 30vmax;
+    height: 25vmin;
+    border-radius: 5px;
+    align-self:flex-end;
+    margin-top: -80px;
+    margin-right: 60px;
+     justify-content: center;
+  } 
+   .bot{
+    text-align: center;
+     font-size: 25px; 
+     opacity: 0.7; 
+     color: wheat;
+     margin-top: px;
+  }
+  .checkbtn{
+    color: white;
+    margin-left: auto;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+  display: none;
+}
+.picca1{
+  margin-left: 15px;                       
+}
+.picca2{
+  margin-top: -7px;
+
+}
+  
+
+  @media screen and (max-width:1068px) {
+    .container{
+      width: 100%;
+      height: fit-content;
+    }
+    #h1f{
+
+      font-size: 35px;
+    }
+    .picca{
+      font-size: 20px;
+    }
+    .abt{
+      font: 10px;;
+    }
+   
+  }
+
+  @media screen and (max-width:968px) {
+.container{
+  width: 100%;
+  height: auto;
+}
+.checkbtn{
+  display: block;
+}
+.topnav{
+  position: fixed;
+}
+.topnav ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #181719;
+  top: 80px;
+  left: 0;
+  }
+  .topnav li{
+    text-align: center;
+    display: block;
+    height: 60px;
+}
+.topnav a{
+  line-height: 80px;
+}
+
+#check:checked ~ ul{
+    left: 100%;
+}
+  
+
+  @media screen and (max-width:968px) {
+    .container{
+      width: 100%;
+      height: auto;
+      font-size: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 1fr 0.2fr 0fr   ;
+      grid-template-areas:  
+       "header"
+       "advert"
+       "content"
+       "footer";
+    }
+    body{
+      margin: 5px;
+    }
+    .img-c{
+      width: 65vmax;
+    }
+    .img-c2{
+      width:50px;
+      height: 55px;
+    }
+    p, .bot{
+      font-size: 18px;
+    }
+   
+    .bio{
+      font-size: 1px;
+    }
+    .abt{
+      font-size: 18px;
+    }
+    .picca{
+      font-size: 12px;
+    }
+    
+   }
